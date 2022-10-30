@@ -1,0 +1,66 @@
+:root {
+    --cyan: rgb(24, 125, 110);
+    --dark: rgb(39, 49, 55);
+}
+
+
+
+body {
+    background-image: linear-gradient(to right, rgb(39, 49, 55) , rgb(24, 125, 110));
+    
+
+}
+
+header {
+    display: flex;
+    
+}
+
+
+header nav {
+    flex-direction: column;
+     
+}
+
+header h1 {
+    font-size: 200%;
+    color:beige;
+    
+    
+}
+
+nav a {
+    text-decoration: none;
+    color:beige;
+    padding: 30% 20%;
+}
+
+header nav a:hover {
+    background: yellow;
+}
+
+nav ul {
+    
+}
+
+nav ul li{
+    display: flex;
+    
+    
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+header img {
+    margin: auto;
+    height: 30%;
+    width: 30%;
+    border-radius: 60%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+}
