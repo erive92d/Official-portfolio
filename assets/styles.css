@@ -223,84 +223,27 @@ contents h3 {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-  
-    flex-direction: row;
+    background-color: rgb(31, 42, 46);
+    border-top: 5px solid white;
     margin: auto;
-    width: 30%;
+    width: 100%;
     text-align: center;
 }
 
 footer h3 {
     color: var(--letters);
-    font-size: 100%;
-    padding: 5%;
+    font-size: 150%;
+    margin: 1%;
 
 }
 
 footer a{
     display: block;
     width: 100%;
-    margin: 5%;
+    margin: 1% 0;
 
 }
 
-@media screen and (max-width:600px) {
-
-    nav {
-        font-size: 300%;
-    }
-    nav ul li{
-        width: 100%;
-        
-       
-    }
-    
-
-    .intro {
-        display: flex;
-        flex-direction: column;
-    }
-    .intro p {
-        font-size: 250%;
-        width: 150%;
-    }
-
-    .intro img {
-        border-radius: 5%;
-        height: 110%;
-        width: 150%;
-        
-    }
-
-    main h2 {
-        margin: 5% 0;
-        border-radius: 5%;
-        width: 100%;
-        font-size: 250%;
-    }
-
-    main p {
-        width: 100%;
-        
-        font-size: 250%;
-
-
-    }
-
-    ul .small {
-       
-        height: 500px;
-        width: 500px;
-    }
-
-    #down-arrow {
-        margin: 10% 0;
-    }
-        
-    
-}
 
 @media screen and (max-width:600px) {
 
@@ -333,8 +276,9 @@ footer a{
 
     .intro img {
         border-radius: 5%;
+        margin: auto;
         height: 110%;
-        width: 100%;
+        width: 120%;
         
     }
 
@@ -358,15 +302,42 @@ footer a{
     }
 
     ul .small {
-       
-        height: 500px;
-        width: 500px;
+        margin: 5% 0;
+        height: 40vh;
+        width: 40vh;
+    }
+
+    ul #big {
+        margin: 5% auto;
+        width: 80vh;
     }
 
     #down-arrow {
         margin: 10% 0;
     }
+
+    contents .status {
+        display:block;
         
+    }
+
+    .bars {
+        width: 100%;
+        
+    }
+    footer {
+        display: block;
+        margin: 7% 0;
+
+    }
+
+    footer h3 {
+        font-size: 200%;
+    }
+
+    footer a {
+        font-size: 150%;
+    }
 
 }
 
