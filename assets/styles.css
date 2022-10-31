@@ -110,11 +110,11 @@ main {
 
 main contents {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
 main h2 {
-    
     text-align: center;
     font-size: 150%;
     color:var(--letters);
@@ -123,7 +123,7 @@ main h2 {
     background-color: var(--dark);
     margin: 2% auto;
     width: 20%;
-    padding: 2%;
+    padding: 3%;
 }
 
 main p {
@@ -131,15 +131,22 @@ main p {
     font-size: 18px;
     border: 5px solid var(--letters);
     padding: 2% 2%;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
 }
 
 main contents {
+    display: flex;
+    flex-wrap: wrap;
     padding: 2% 3% ;
 }
 
 main contents ul {
-    margin: 5% 0;
+    margin: 0;
+    border: 5px solid rgb(52, 79, 65);
+    height: 30%;
+    width: 100%;
+    padding: 2%;
+    
     
 }
 
@@ -167,9 +174,8 @@ contents .small {
 }
 
 
-/* MEDIA SCREEN */
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:600px) {
 
     nav {
         font-size: 300%;
@@ -224,3 +230,72 @@ contents .small {
         
     
 }
+
+@media screen and (max-width:600px) {
+
+    
+    nav {
+        font-size: 200%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        
+       
+    }
+
+    container {
+        display: flex;
+       
+    }
+    
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .intro p {
+        font-size: 250%;
+        width: 100%;
+    }
+
+    .intro img {
+        border-radius: 5%;
+        height: 110%;
+        width: 100%;
+        
+    }
+
+    main contents {
+        display: flex;
+        margin: auto;
+    }
+
+    main h2 {
+        margin: 5% 0;
+        border-radius: 5%;
+        width: 100%;
+        font-size: 250%;
+    }
+
+    main p {
+        width: 100%;
+        
+        font-size: 250%;
+
+    }
+
+    ul .small {
+       
+        height: 500px;
+        width: 500px;
+    }
+
+    #down-arrow {
+        margin: 10% 0;
+    }
+        
+
+}
+
