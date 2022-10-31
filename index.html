@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,32 +10,63 @@
     <link rel="stylesheet" href="./assets/styles.css">
 
 </head>
+
 <body>
-    <header>
-    <nav>
-        <ul>
-            <li><h1>Deorren Erive</h1></li>
-            <li class="links"><a href="#">About Me</a></li>
-            <li class="links"><a href="#">Projects</a></li>
-            <li class="links"><a href="#">Contacts</a></li>
-            <li class="links"><a href="#">Skillset</a></li>
-            <li id="down-arrow"><a href="#">Down</a></li>
+    <container>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <h1>Deorren Erive</h1>
+                    </li>
+                    <li class="links"><a href="#about-me">About Me</a></li>
+                    <li class="links"><a href="#projects">Projects</a></li>
+                    <li class="links"><a href="#skillset">Skillset</a></li>
+                    <li class="links"><a href="#contacts">Contacts</a></li>
+                    <li id="down-arrow"><a href="#">&#8595;</a></li>
 
-        </ul>
-        
-    </nav>
-    <img src="./assets/images/profilepic.jpg" alt="wedding pic as profile pic">
-    </header>
-    
-    
-   
-<main>
-    
+                </ul>
 
 
+            </nav>
+        </header>
+        <div class="intro">
+            <p><span id="hey-there">Hey there!</span><br>I'm Deorren Erive. A UC Berkeley coding bootcamp student hoping to get a job as a full stack developer.<br>Take a quick look at my <button><a href="#projects">Projects</a></button> </p>
+            
+            <img src="./assets/images/profilepic.jpg" alt="wedding pic as profile pic" />
+            
+        </div>
+
+    </container>
+
+    <main>
+        <contents>
+            <h2 id="about-me">About me</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, maxime nihil dolorum non fuga porro perferendis vel, velit, laboriosam inventore dolores! Excepturi, aperiam reprehenderit nobis similique distinctio ex earum nemo.</p>
+            <h2 id="projects">Projects</h2>
+            <ul>
+                <li><a><img id="big"src="./assets/images/miniproject.png" alt="miniproject"></a></li>
+                <li><img class="small"src="./assets/images/refactor.png" alt="refactoring"></li>
+                <li><img class="small"src="./assets/images/avatar.png" alt="random"></li>
+                <li><img class="small"src="./assets/images/comingsoon.jpeg" alt="random"></li>
+                <li><img class="small"src="./assets/images/comingsoon.jpeg" alt="random"></li>
+                <li><img class="small"src="./assets/images/comingsoon.jpeg" alt="random"></li>
+                <li><img class="small"src="./assets/images/comingsoon.jpeg" alt="random"></li>
+            </ul>
+            <h2 id="skillset">Skillset</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae, laudantium eaque provident obcaecati optio at temporibus nulla. Inventore earum nobis quos tempora? Voluptate iste nesciunt autem temporibus labore enim?</p>
+            <h2 id="contacts">Contacts</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae, laudantium eaque provident obcaecati optio at temporibus nulla. Inventore earum nobis quos tempora? Voluptate iste nesciunt autem temporibus labore enim?</p>
 
 
-</main>
-    
+
+
+
+        </contents>
+
+
+    </main>
+
 </body>
+
 </html>
