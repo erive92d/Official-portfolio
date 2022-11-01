@@ -324,16 +324,40 @@ footer a {
 }
 
 
+/* TABLET MEDIA QUERY */
+@media screen and (max-width:800px) {
+
+    ul .small {
+        margin: 5% 0;
+        height: 40vh;
+        width: 40vh;
+    }
+
+    ul #big {
+        margin: 5% auto;
+        width: 50vh;
+    }
+
+}
+
+
+
+
+
+
+
+/* MOBILE MEDIA QUERY */
+
 @media screen and (max-width:600px) {
 
 
     nav {
-        font-size: 200%;
+        font-size: 150%;
     }
 
     nav ul {
-        display: flex;
-        flex-direction: column;
+        display: block;
+
 
 
     }
