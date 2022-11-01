@@ -51,21 +51,43 @@ a:hover {
 
 
 
-
-nav ul li {
+nav {
     display: flex;
-    text-align: center;
     flex-direction: column;
-    padding: 20% 10%;
+    flex-wrap: wrap;
     
 }
 
 
-
-#down-arrow {
-    margin: 35% auto;
-    font-size: 200%;
+nav ul li {
+    display: flex;
+    margin: 100% 0;
+    border: 3px solid var(--cyan);   
+    width: 130%;
 }
+
+nav ul {
+    display: block;
+    height: 40%;
+    margin: 30%;
+    
+}
+
+
+    
+
+.links {
+    padding: 10%;
+    font-size: 180%;
+    
+}
+
+
+container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 
 container .intro {
@@ -79,7 +101,7 @@ container img {
     height: 60%;
     width: 30%;
     border-radius: 50%;
-    margin: 10% 5%;
+    margin: 10% 3%;
     border: 3px solid white;
 }
 
@@ -87,7 +109,7 @@ container p {
     width: 50%;
     color:beige;
     font-size: 24px;
-    margin: auto 5%;
+    margin: auto 15%;
     padding: 5%;
     line-height: 1.5;
 }
@@ -309,7 +331,7 @@ footer a{
 
     ul #big {
         margin: 5% auto;
-        width: 80vh;
+        width: 50vh;
     }
 
     #down-arrow {
@@ -328,6 +350,7 @@ footer a{
     footer {
         display: block;
         margin: 7% 0;
+        width: 100%;
 
     }
 
