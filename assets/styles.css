@@ -5,13 +5,13 @@
 }
 
 * {
-    font-family:monospace;
+    font-family: monospace;
 }
 
 
 
 body {
-    background-image: linear-gradient(to right, rgb(39, 49, 55) , rgb(24, 125, 110));
+    background-image: linear-gradient(to right, rgb(39, 49, 55), rgb(24, 125, 110));
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -22,30 +22,30 @@ body {
 container {
     display: flex;
     flex-wrap: wrap;
-    
-    
+
+
 }
 
 
 header h1 {
     font-size: 200%;
-    color:var(--letters);
+    color: var(--letters);
 }
 
 a {
     text-decoration: none;
-    color:var(--letters);
-    
+    color: var(--letters);
+
 }
 
 a:hover {
     color: rgb(188, 219, 237);
-	text-shadow: none;
-	-webkit-transition: 500ms linear 0s;
-	-moz-transition: 500ms linear 0s;
-	-o-transition: 500ms linear 0s;
-	transition: 500ms linear 0s;
-	outline: 0 none;
+    text-shadow: none;
+    -webkit-transition: 500ms linear 0s;
+    -moz-transition: 500ms linear 0s;
+    -o-transition: 500ms linear 0s;
+    transition: 500ms linear 0s;
+    outline: 0 none;
     text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
 }
 
@@ -55,31 +55,39 @@ nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
+
 }
 
 
 nav ul li {
     display: flex;
     margin: 100% 0;
-    border: 3px solid var(--cyan);   
+    /* border: 3px solid var(--cyan); */
     width: 130%;
 }
 
 nav ul {
     display: block;
     height: 40%;
-    margin: 30%;
-    
+    margin: 0 20%;
+
 }
 
 
-    
+
+/* NAV LINKS */
 
 .links {
     padding: 10%;
-    font-size: 180%;
-    
+    font-size: 150%;
+
+}
+
+.links:before {
+    content: "▻";
+    font-size: 200;
+    margin-right: 5%;
+    color: beige;
 }
 
 
@@ -90,13 +98,15 @@ container {
 
 
 
+/* INTRO - PROFILE IMAGE */
 container .intro {
     display: flex;
     width: 80%;
     height: 80%;
-   
-    
+    border-bottom: 3px solid rgb(93, 133, 131);
+
 }
+
 container img {
     height: 60%;
     width: 30%;
@@ -107,21 +117,24 @@ container img {
 
 container p {
     width: 50%;
-    color:beige;
+    color: beige;
     font-size: 24px;
     margin: auto 15%;
     padding: 5%;
     line-height: 1.5;
+    border-right: 3px solid rgb(93, 133, 131);
 }
 
+/* PROJECT BUTTON */
 
 container button {
     background-color: rgb(28, 90, 224);
     border: 3px solid rgb(228, 217, 217);
     border-radius: 10px;
     padding: 1% 3%;
-   
+
 }
+
 #hey-there {
     font-size: 120%;
 }
@@ -130,13 +143,13 @@ main contents {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
+
 }
 
 main h2 {
     text-align: center;
     font-size: 150%;
-    color:var(--letters);
+    color: var(--letters);
     border: 5px solid var(--letters);
     border-radius: 50%;
     background-color: var(--dark);
@@ -150,26 +163,33 @@ main p {
     color: var(--letters);
     font-size: 120%;
     font-size: 18px;
-    width: 60%;
+    width: 80%;
     padding: 2% 2%;
-    margin: auto;
+    margin: 5% auto;
     line-height: 2.0;
+    border-bottom: 3px solid rgb(93, 133, 131);
 }
 
 main contents {
     display: flex;
     flex-wrap: wrap;
-    padding: 2% 3% ;
+    padding: 2% 3%;
 }
 
 main contents ul {
-    margin: 0;
+    margin: auto;
+    width: 80%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    border-bottom: 3px solid rgb(93, 133, 131);
     
-    height: 30%;
-    width: 100%;
-    padding: 2%;
     
     
+  
+
 }
 
 contents img {
@@ -178,21 +198,21 @@ contents img {
     border-radius: 20%;
     box-shadow: 20px 0 20px rgb(17, 44, 44);
     transform: rotate(10deg);
+    
 
 }
 
-
+/* BIGGER IMAGE */
 contents #big {
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
     float: left;
 }
-
+/* SMALLER IMAGE */
 contents .small {
-    height: 200px;
-    width: 200px;
-    float: right;
-    
+    height: 100px;
+    width: 100px;
+
 
     margin: 2%;
 }
@@ -201,18 +221,23 @@ contents h3 {
     display: flex;
     justify-content: center;
     margin: 2% 0;
-    color:var(--letters);
+    color: var(--letters);
     font-size: 150%;
 }
 
+/* PROGRESS BARS */
+
+#skillset {
+    margin-top: 7%;
+}
 .status {
-   
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 2%;
-    
-    
+
+
 }
 
 .bars {
@@ -223,12 +248,12 @@ contents h3 {
     border-radius: 5px;
     width: 20%;
     margin: 2%;
-    
-    
+
+
 }
 
 #html-skills {
-    background-image: linear-gradient(var(--cyan), gray) ;
+    background-image: linear-gradient(var(--cyan), gray);
     color: black;
     width: 30%;
 }
@@ -238,12 +263,13 @@ contents h3 {
     color: black;
     width: 20%;
 }
+
 #javascript-skills {
     background-image: linear-gradient(var(--cyan), gray);
     color: black;
-    width: 1%;
+    width: 5%;
 }
-
+/* CONTACTS */
 footer {
     background-color: rgb(31, 42, 46);
     border-top: 5px solid white;
@@ -259,7 +285,7 @@ footer h3 {
 
 }
 
-footer a{
+footer a {
     display: block;
     width: 100%;
     margin: 1% 0;
@@ -269,28 +295,30 @@ footer a{
 
 @media screen and (max-width:600px) {
 
-    
+
     nav {
         font-size: 200%;
     }
-    nav ul{
+
+    nav ul {
         display: flex;
         flex-direction: column;
-        
-       
+
+
     }
 
     container {
         display: flex;
-       
+
     }
-    
+
 
     .intro {
         display: flex;
         flex-direction: column;
 
     }
+
     .intro p {
         font-size: 250%;
         width: 100%;
@@ -301,7 +329,7 @@ footer a{
         margin: auto;
         height: 110%;
         width: 120%;
-        
+
     }
 
     main contents {
@@ -318,7 +346,7 @@ footer a{
 
     main p {
         width: 100%;
-        
+
         font-size: 250%;
 
     }
@@ -339,14 +367,15 @@ footer a{
     }
 
     contents .status {
-        display:block;
-        
+        display: block;
+
     }
 
     .bars {
         width: 100%;
-        
+
     }
+
     footer {
         display: block;
         margin: 7% 0;
@@ -363,4 +392,3 @@ footer a{
     }
 
 }
-
