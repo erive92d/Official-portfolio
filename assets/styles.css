@@ -158,6 +158,37 @@ main h2 {
     padding: 3%;
 }
 
+/* SPAN NAME PRONOUNCIATION */
+
+span[data-text] {
+    text-decoration: underline;
+    cursor: grab;
+
+}
+
+span[data-text]::after {
+    content:attr(data-text);
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100px;
+    font-size: 80%;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    display:none;
+    
+}
+
+span[data-text]:hover::after {
+    position: absolute;
+    left: 350px;
+    bottom: -190px;
+    display: inline-block;
+    
+
+}
+
 main p {
     justify-content: center;
     color: var(--letters);
