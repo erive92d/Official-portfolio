@@ -103,7 +103,7 @@ container .intro {
     display: flex;
     width: 80%;
     height: 80%;
-    border-bottom: 3px solid rgb(93, 133, 131);
+    
 
 }
 
@@ -114,6 +114,7 @@ container img {
     margin: 10% 3%;
     border: 3px solid white;
 }
+
 
 container p {
     width: 50%;
@@ -189,7 +190,7 @@ span[data-text]:hover::after {
 
 }
 
-main p {
+main p:not(.img-title){
     justify-content: center;
     color: var(--letters);
     font-size: 120%;
@@ -229,9 +230,27 @@ contents img {
     border-radius: 20%;
     box-shadow: 20px 0 20px rgb(17, 44, 44);
     transform: rotate(10deg);
-    
 
 }
+
+.img-title {
+    color: beige;
+    font-size: 100%;
+    position: relative;
+    top: 3%;
+    left: 3%;
+
+}
+
+#big-title {
+    color: beige;
+    font-size: 150%;
+    position: relative;
+    top: 8%;
+    left: 12%;
+}
+
+
 
 /* BIGGER IMAGE */
 contents #big {
@@ -298,7 +317,7 @@ contents h3 {
 #javascript-skills {
     background-image: linear-gradient(var(--cyan), gray);
     color: black;
-    width: 5%;
+    width: 10%;
 }
 /* CONTACTS */
 footer {
