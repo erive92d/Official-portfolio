@@ -53,8 +53,10 @@ a:hover {
 
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    
 
 }
 
@@ -67,7 +69,7 @@ nav ul li {
 }
 
 nav ul {
-    display: block;
+    
     height: 40%;
     margin: 0 20%;
 
@@ -368,20 +370,46 @@ footer a {
 /* MOBILE MEDIA QUERY */
 
 @media screen and (max-width:600px) {
-
+    header {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        
+    }
 
     nav {
         font-size: 120%;
+        display: block;
+        width: 100%;
+        margin-bottom: 20%;
+       
+       
+
     }
 
-    nav ul {
+    
+    nav ul li {
         display: block;
+        text-align: center
+        ;
+        
+        
 
+    
+    }
+    .links {
+        font-size: 200%;
+        margin: 8% 0;
+        border-bottom: 3px solid white;
     }
 
     container {
         display: flex;
+        margin: 5% 0;
 
+    }
+    container p {
+        border-right: none;
     }
 
 
@@ -392,8 +420,9 @@ footer a {
     }
 
     .intro p {
-        font-size: 250%;
-        width: 100%;
+        font-size: 200%;
+        width: 90%;
+       
     }
 
     .intro img {
@@ -417,7 +446,7 @@ footer a {
     }
 
     main p {
-        width: 100%;
+        
 
         font-size: 250%;
 
@@ -432,6 +461,11 @@ footer a {
     ul #big {
         margin: 5% auto;
         width: 50vh;
+    }
+
+    .img-title {
+        margin: 8%;
+        transform: rotate(7deg);
     }
 
     #down-arrow {
