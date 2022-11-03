@@ -55,7 +55,8 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    
+    
     
 
 }
@@ -287,6 +288,7 @@ contents h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 5% 0;
     padding: 2%;
 
 
@@ -340,7 +342,8 @@ footer h3 {
 footer a {
     display: block;
     width: 100%;
-    margin: 1% 0;
+   
+    padding: 1%;
 
 }
 
