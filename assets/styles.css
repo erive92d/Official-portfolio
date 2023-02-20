@@ -260,14 +260,13 @@ contents #big {
     height: 300px;
     width: 300px;
     float: left;
+    
 }
 /* SMALLER IMAGE */
 contents .small {
     height: 100px;
     width: 100px;
-
-
-    margin: 2%;
+    margin: 15%;
 }
 
 contents h3 {
@@ -309,19 +308,19 @@ contents h3 {
 #html-skills {
     background-image: linear-gradient(var(--cyan), gray);
     color: black;
-    width: 30%;
+    width: 90%;
 }
 
 #css-skills {
     background-image: linear-gradient(var(--cyan), gray);
     color: black;
-    width: 20%;
+    width: 90%;
 }
 
 #javascript-skills {
     background-image: linear-gradient(var(--cyan), gray);
     color: black;
-    width: 10%;
+    width: 80%;
 }
 /* CONTACTS */
 footer {
